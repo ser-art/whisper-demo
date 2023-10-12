@@ -50,7 +50,7 @@ def transcribe(file_path, model_name="base"):
 
 
 def main():
-    st.title("Whisper Transcription Demo")
+    st.title("SigmaBank Whisper Support")
 
     st.markdown(
         """Press the button below to start recording, to stop recording just stop speaking. 
