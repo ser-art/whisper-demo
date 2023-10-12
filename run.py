@@ -6,6 +6,11 @@ from tempfile import NamedTemporaryFile
 from audio_recorder_streamlit import audio_recorder
 
 
+@st.cache_resource()
+def load_model(model_name="base"):
+    return whisper.load_model(model_name, device="cpu")
+
+
 def transcribe(file_path, model_name="base"):
     # Print results
     st.text(f"File: {file_path}")
