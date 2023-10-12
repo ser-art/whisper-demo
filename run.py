@@ -44,7 +44,7 @@ def transcribe(file_path, model_name="base"):
     st.markdown(
         f"**Time taken for transcription: {end_time - start_time:.2f} seconds!**"
     )
-    st.markdown(f"**Transcription: {result['text']}**")
+    st.markdown(f"**Transcription: {result['text']}.**")
 
 
 def main():
