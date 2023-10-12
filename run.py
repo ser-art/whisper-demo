@@ -32,6 +32,8 @@ def transcribe(file_path, model_name="base"):
 
     # print(result)
 
+    st.text("Transcribing...")
+
     # Start timing
     start_time = time.time()
 
@@ -49,6 +51,11 @@ def transcribe(file_path, model_name="base"):
 
 def main():
     st.title("Whisper Transcription Demo")
+
+    st.markdown(
+        """Press the button below to start recording, to stop recording just stop speaking. 
+        Wait untill the audio is uploaded before pressing the transcribe button."""
+    )
 
     audio_bytes = audio_recorder()
     if audio_bytes:
