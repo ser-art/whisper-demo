@@ -1,3 +1,4 @@
 openai-whisper
 streamlit
 audio-recorder-streamlit
+librosa
